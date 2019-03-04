@@ -1,0 +1,15 @@
+---
+# Input test parameters
+
+
+locations:
+  A:
+    max_real: 1
+    max_fake: 1
+  B:
+    max_real: 1
+    max_fake: 1
+
+graph:
+  - A :
+

@@ -1,0 +1,38 @@
+---
+# Input parameters for ruby rush
+
+start : Enumerable Canyon
+
+locations:
+  Enumerable Canyon:
+    max_real: 1
+    max_fake: 1
+  Duck Type Beach:
+    max_real: 2
+    max_fake: 2
+  Matzburg:
+    max_real: 3
+    max_fake: 0
+  Monkey Patch City:
+    max_real: 1
+    max_fake: 1
+  Nil Town:
+    max_real: 0
+    max_fake: 0
+  Hash Crossing:
+    max_real: 2
+    max_fake: 2
+  Dynamic Palisades:
+    max_real: 2
+    max_fake: 2
+
+graph:
+  - Enumerable Canyon: Monkey Patch City
+  - Enumerable Canyon: Duck Type Beach
+  - Duck Type Beach: Matzburg
+  - Matzburg: Monkey Patch City
+  - Matzburg: Hash Crossing
+  - Matzburg: Dynamic Palisades
+  - Monkey Patch City: Nil Town
+  - Nil Town: Hash Crossing
+  - Hash Crossing: Dynamic Palisades
